@@ -48,6 +48,7 @@ type
     procedure btn_okClick(Sender: TObject);
     procedure menu_item_historicoClick(Sender: TObject);
     procedure Sair1Click(Sender: TObject);
+    procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
   private
     { Private declarations }
   public
@@ -226,6 +227,35 @@ procedure Tform_principal.btn_subClick(Sender: TObject);
 begin
   op := '-';
   ajustar_operacao(Sender, edit_visor, op);
+end;
+
+procedure Tform_principal.FormKeyDown(Sender: TObject; var Key: Word;
+  Shift: TShiftState);
+begin
+  case key of
+    vk_numpad0: btn_0.Click;
+    vk_numpad1: btn_1.Click;
+    vk_numpad2: btn_2.Click;
+    vk_numpad3: btn_3.Click;
+    vk_numpad4: btn_4.Click;
+    vk_numpad5: btn_5.Click;
+    vk_numpad6: btn_6.Click;
+    vk_numpad7: btn_7.Click;
+    vk_numpad8: btn_8.Click;
+    vk_numpad9: btn_9.Click;
+
+    vk_escape: btn_c.click;
+    vk_delete: btn_c.click;
+
+    vk_add: btn_adicao.click;
+    vk_subtract: btn_sub.click;
+    vk_divide: btn_div.Click;
+    vk_multiply: btn_mult.click;
+
+    vk_return: btn_ok.Click;
+
+
+  end;
 end;
 
 procedure Tform_principal.menu_item_historicoClick(Sender: TObject);

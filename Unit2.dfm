@@ -34,6 +34,7 @@ object form_historico: Tform_historico
     Top = 40
     Width = 305
     Height = 233
+    TabStop = False
     Color = clMenuBar
     Font.Charset = ANSI_CHARSET
     Font.Color = clFuchsia

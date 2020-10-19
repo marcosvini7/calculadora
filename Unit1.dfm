@@ -5478,9 +5478,11 @@ object form_principal: Tform_principal
     C0000300C0000300C0000300C0000300C0000300C0000300C0000300C0000300
     C0000300C0000300C0000300C0000300C0000300C0000300C0000300C0000300
     C0000300C0000300C0000300313734383932}
+  KeyPreview = True
   Menu = MainMenu1
   OldCreateOrder = False
   Position = poDesktopCenter
+  OnKeyDown = FormKeyDown
   PixelsPerInch = 96
   TextHeight = 13
   object btn_9: TSpeedButton
@@ -5712,6 +5714,7 @@ object form_principal: Tform_principal
     Top = 56
     Width = 324
     Height = 53
+    TabStop = False
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clHighlight
     Font.Height = -37
